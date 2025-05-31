@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/ae26b5f911.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            border-radius: 20px;
+            box-shadow: 0px 5px 5px 2px black;
+            margin: 50px auto;
+            width: 90%;
+            max-width: 1000px;
+            padding: 20px;
+        }
+        img {
+            height: 300px;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            border: 2px solid white;
+            box-shadow: 2px 2px 2px blue;
+            display: block;
+            margin: 0 auto;
+        }
+        .first {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        .left {
+            flex: 1;
+            min-width: 280px;
+            border-radius: 20px;
+            background-image: linear-gradient(navy, black, crimson);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        #name, #post {
+            color: white;
+        }
+        .right {
+            flex: 2;
+            min-width: 280px;
+            padding: 20px;
+        }
+        #hl {
+            display: inline-block;
+            text-shadow: 2px 2px 2px black;
+            background-image: linear-gradient(to right, blue, yellow, aqua);
+            border: 2px solid black;
+            margin: 5px;
+            text-align: center;
+            width: 100px;
+            padding: 5px;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        #hl:hover {
+            color: blue;
+        }
+        #acm {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .skill{
+            background-color: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+                align-items: center;
+            }
+            .first {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .left, .right {
+                width: 100%;
+            }
+            a {
+                width: 80px;
+            }
+        }
+        #hs{
+            text-decoration: none;
+            color: black;
+            
+        }
+        #imag{
+            width: 100px;
+            height: 100px;
+        }
+        .para{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: blanchedalmond;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <img src="https://yt3.ggpht.com/43pKloT58OwAKwBWh86_eOOhabYMwRhSGdajUrbuMIUEirhAlPfqm9xPYviF9CJ16tcj6e12k-WufQ=s499-c-fcrop64=1,00000a97fffff568-rw-nd-v1">
+            <h2 id="name">Bishwas Ghimire</h2>
+            <p id="post">Student</p>
+            <p id="post">NCIT College
+                <br><br><br>
+            <a href="https://ncit.edu.np/">
+               <img src="https://theedunepal.ap-south-1.linodeobjects.com/bachelorfairuploads/clients/ncit/logo/nepal_college_of_informationpng_20220608011130.png" alt="" id="imag">
+            </a>
+            <p class="para">Enthusiastic and optimistic, always embracing new challenges with a positive mindset. Known for being compassionate and supportive, fostering meaningful connections with others. Driven by curiosity and a passion for continuous learning and personal growth.</p>
+            </p>
+        </div>
+        <div class="right">
+            <h1>Information</h1>
+            <hr>
+            <div class="first">
+                <div class="email">
+                    <h3 class="hd">Email</h3>
+                    <p>bishwasghimire2060@gmail.com</p>
+                    <p><a href="mailto:bishwasghimire2060@gmail.com" id="hl">Mail Me</a></p>
+                </div>
+                <div class="phone">
+                    <h3>Phone</h3>
+                    <p>9866342404</p>
+                </div>
+            </div>
+
+            <br><br>
+            <h1>Skills</h1>
+            <hr>
+            <div class="skills">
+                <div class="skill">
+                    <a href="https://en.wikipedia.org/wiki/C_(programming_language)" id="hs">C</a>
+                </div>
+                <div class="skill">
+                    <a href="https://en.wikipedia.org/wiki/C%2B%2B" id="hs">C++</a>
+                </div>
+                <div class="skill">
+                    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" id="hs">JAVA</a>
+                </div>
+                <div class="skill">
+                    <a href="https://en.wikipedia.org/wiki/HTML" id="hs">HTML</a>
+                </div>
+                <div class="skill">
+                    <a href="https://en.wikipedia.org/wiki/CSS" id="hs">CSS</a>
+                </div>
+                <div class="skill">
+                    <a href="https://en.wikipedia.org/wiki/JavaScript" id="hs">JAVASCRIPT</a>
+                </div>
+                <div class="skill">
+                    <a href="https://en.wikipedia.org/wiki/PHP" id="hs">PHP</a>
+                </div>
+            </div>
+
+            <br>
+            <h1>Connect Me</h1>
+            <hr>
+            <div id="acm">
+            <i class="fa-brands fa-facebook fa-beat" style="color: #196dae;"></i>
+                <a href="https://www.facebook.com/bishwas.ghimire.144/" id="hl" target="_blank">Facebook</a>
+                <i class="fa-brands fa-instagram fa-beat" style="color: red;"></i>
+                <a href="https://www.instagram.com/bishwas.ghimire.144/?hl=en" target="_blank" id="hl">Instagram</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
